@@ -1,0 +1,306 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	display: grid;
+	height: 120vh;
+	background-color: rgb(50, 50, 50);
+	font-family: 'Markazi Text', serif, sans-serif;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: 5%;
+	margin-right: 5%;
+
+}
+
+h1{
+	font-size: 2rem;
+}
+
+h2{
+	font-size: 1.5rem;
+	font-family: 'Papyrus';
+	color: white;
+	padding: 5px;
+}
+
+/*logo*/
+header > img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+
+/*
+* nav properties
+*/
+nav{
+	display: flex;
+	background-color: teal;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+nav ul{
+	list-style: none;
+	text-align: center;
+}
+
+nav li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav a{
+	display: inline-block;
+	font-family: 'Papyrus';
+	font-size: 20px;
+	padding: 5px;
+	margin: 0 25px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover{
+	background-color: lightsteelblue;
+}
+
+
+/* Section properties */
+section{
+	display: flex;
+	padding: 20px;
+}
+
+section h1{
+	color: red;
+	font-family: 'Papyrus';
+	text-align: center;
+	animation: expand 2s linear;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	text-shadow: 0 0 30px green, 0 0 5px white;
+}
+
+article{
+	flex: 1;
+}
+
+article{
+	width: auto;
+  border: 2px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  color: white;
+  background-color: teal;
+}
+
+@keyframes expand {
+	from{
+		transform: translate3d(0px, 0px, 0px);
+	}
+
+	to{
+		transform: translate3d(30px, 0px, 0px);
+	}
+}
+
+#main_article{
+	background-image: url("outdoor-garden2.jpg");
+}
+
+
+#main_article p{
+	font-size: 20px;
+	font-family: 'Papyrus', sans-serif;
+    
+}
+
+#main_article p:nth-child(odd){
+	color: yellow;
+}
+
+input[type=email], textarea, input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+/*Contact us css*/
+#contact_main{
+	display: flex;
+	width: 300px;
+	height: 600px;
+	border: none;
+	flex-wrap: wrap;
+	padding-top: 30px;
+	justify-content: center;
+	text-align: left;
+	
+}
+
+
+#contact_main h1{
+	color: white;
+	font-family: 'Papyrus';
+}
+
+#contact_main div{
+	padding-bottom: 20px;
+}
+
+#form_div{
+	height: 430px;
+	border-radius: 5px;
+  background-color: gray;
+  padding: 20px;
+}
+
+
+.button {
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: teal;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px #999;
+  justify-content: center;
+}
+
+.button:hover {background-color: #3e8e41;}
+
+.button:active {
+  background-color: teal;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+label{
+	padding: 10px 20px;
+  	font-size: 20px;
+  	border: none;
+  	color: white;
+  	border-radius: 1px;
+}
+
+#email_address{
+	padding: 10px 20px;
+  	font-size: 15px;
+  	box-shadow: 0 8px teal;
+}
+
+#question, #name{
+	box-shadow: 0 8px teal;
+}
+
+
+.about h1{
+	color: white;
+	font-family: 'Papyrus';
+}
+
+.about p{
+	color: white;
+	font-size: 18px;
+	border: none;
+  	padding: 30px;
+  	font-family: 'Arial', 'Helvetica';
+}
+
+blockquote{
+	color: teal;
+}
+
+
+/*CSS offers*/
+.box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: teal;
+}
+
+item{
+	margin: 5px;
+}
+
+#fifth_article .coupon, .coupon {
+  border: 5px dotted #ccc; /* Dotted border */
+  width: 80%;
+  border-radius: 15px; /* Rounded border */
+  margin: 0 auto; /* Center the coupon */
+  max-width: 320px;
+}
+
+#fifth_article.unit {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+#fifth_article .promo {
+  background: blueviolet;
+  padding: 3px;
+}
+
+#fifth_article .expire {
+  color: blue;
+}
+
+/*services*/
+.description_div h1{
+	color: white;
+	font-family: 'Papyrus';
+	animation: expand 2s linear;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+
+}
+.description_div p{
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	font-family: 'Arial', 'Helvetica';
+}
+
+/*Footer properties*/
+footer{
+	display: flex;
+
+}
+
+footer div{
+	flex: 1;
+}
+
+#foot{
+	padding-top: 5px;
+	font-family: 'Papyrus';
+	text-align: center;
+	text-shadow: 0 0 30px green, 0 0 5px lightyellow;
+}
+
+#second_article div{
+	display: block;
+	color: blue;
+	background-color: lightsteelblue;
+	padding: 5px;
+	border: 1px solid blueviolet;
+}
+
+
+
